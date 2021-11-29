@@ -11,7 +11,7 @@ export default function App() {
   //     <Card title="Red jacket for sale" subTitle="$100" image={require("./app/assets/jacket.jpg")} />
   //   </View>
   // );
-  return <ListingDetailScreen />
+  return <ViewImageScreen />
 }
 
 const styles = StyleSheet.create({
