@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Platform } from "react-native";
+import { Text, Platform, StyleSheet } from "react-native";
 import colors from "../configs/colors";
 
 const AppText = ({ children, style }) => {

@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, ImageBackground, Image } from "react-native";
 import BackgroundImg from "../assets/background.jpg";
 import LogoImg from "../assets/logo-red.png";
 import AppButton from "../components/AppButton";
-import colors from "../configs/colors";
 
 const WelcomeScreen = () => {
   return (
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
   buttonSection: {
     width: "100%",
     height: 150,
-    padding: 20,
+    paddingHorizontal: 20,
     marginBottom: 40,
   },
   logoSection: {
@@ -50,8 +49,8 @@ const styles = StyleSheet.create({
     top: 100,
   },
   logoImage: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
   },
   tagline: {
     marginTop: 10,
