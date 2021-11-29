@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import MessagesScreen from "./app/screens/MessagesScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 
@@ -9,7 +10,7 @@ export default function App() {
   //     <Card title="Red jacket for sale" subTitle="$100" image={require("./app/assets/jacket.jpg")} />
   //   </View>
   // );
-  return <ViewImageScreen />
+  return <MessagesScreen />
 }
 
 const styles = StyleSheet.create({
