@@ -1,7 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Platform } from "react-native";
-import Card from "./app/components/Card";
-import ListingDetailScreen from "./app/screens/ListingDetailScreen";
+import { StyleSheet } from "react-native";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 

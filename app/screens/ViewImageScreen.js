@@ -10,16 +10,16 @@ const ViewImageScreen = () => {
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.black }}>
       <View style={styles.container}>
         <View style={styles.controls}>
-          <View style={styles.delete}>
+          <View style={styles.close}>
             <MaterialCommunityIcons
-              name="delete"
+              name="close"
               size={40}
               color={colors.white}
             />
           </View>
-          <View style={styles.close}>
+          <View style={styles.delete}>
             <MaterialCommunityIcons
-              name="close"
+              name="delete"
               size={40}
               color={colors.white}
             />
