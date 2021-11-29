@@ -23,22 +23,21 @@ const data = [
 const MessagesScreen = () => {
   return (
     <Screen>
-      <View>
-        <FlatList
-          data={data}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => {
-            return (
-              <ListItem
-                image={item.image}
-                title={item.title}
-                subTitle={item.description}
-              />
-            );
-          }}
-          ItemSeparatorComponent={ItemSeparator}
-        />
-      </View>
+      <FlatList
+        data={data}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => {
+          return (
+            <ListItem
+              image={item.image}
+              title={item.title}
+              subTitle={item.description}
+              onPress={() => console.log(item)}
+            />
+          );
+        }}
+        ItemSeparatorComponent={ItemSeparator}
+      />
     </Screen>
   );
 };
