@@ -19,7 +19,7 @@ const ViewImageScreen = () => {
           </View>
           <View style={styles.delete}>
             <MaterialCommunityIcons
-              name="delete"
+              name="trash-can"
               size={40}
               color={colors.white}
             />
