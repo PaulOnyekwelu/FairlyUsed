@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import ItemSeparator from "../components/ItemSeparator";
 import LinkItem from "../components/LinkItem";
@@ -13,19 +13,19 @@ const linkOptions = [
     id: 1,
     title: "My Listings",
     iconName: "format-list-bulleted",
-    color: colors.primary,
+    bgColor: colors.primary,
   },
   {
     id: 2,
     title: "My Messages",
     iconName: "email",
-    color: colors.secondary,
+    bgColor: colors.secondary,
   },
   {
     id: 3,
     title: "Log Out",
     iconName: "logout",
-    color: colors.yellowish,
+    bgColor: "#ffe66d",
   },
 ];
 

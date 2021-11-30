@@ -1,14 +1,10 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import AccountScreen from "./app/screens/AccountScreen";
+import ListingScreen from "./app/screens/ListingScreen";
 
 export default function App() {
-  // return (
-  //   <View style={styles.appContainer}>
-  //     <Card title="Red jacket for sale" subTitle="$100" image={require("./app/assets/jacket.jpg")} />
-  //   </View>
-  // );
-  return <AccountScreen />
+  return <ListingScreen />
 }
 
 const styles = StyleSheet.create({

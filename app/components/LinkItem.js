@@ -1,15 +1,13 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { View, StyleSheet } from "react-native";
 import colors from "../configs/colors";
 import AppText from "./AppText";
+import AppIcon from "./AppIcon";
 
-const LinkItem = ({ title, iconName, color, style }) => {
+const LinkItem = ({ title, iconName, bgColor, style }) => {
   return (
     <View style={[styles.container, style]}>
-      <View style={[styles.icon, { backgroundColor: color }]}>
-        <MaterialCommunityIcons name={iconName} color="white" size={20} />
-      </View>
+      <AppIcon iconName={iconName} bgColor={bgColor} />
       <View style={styles.textSection}>
         <AppText style={styles.text}>{title}</AppText>
       </View>
@@ -26,18 +24,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: colors.white,
   },
-  icon: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
-    justifyContent: "center",
-    alignItems: "center",
-  },
   text: {
-    fontWeight: "600" 
+    fontWeight: "600",
   },
   textSection: {
     justifyContent: "center",
-    paddingLeft: 10
-  }
+    paddingLeft: 10,
+  },
 });

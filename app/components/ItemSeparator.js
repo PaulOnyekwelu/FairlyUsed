@@ -2,8 +2,12 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import colors from "../configs/colors";
 
-const ItemSeparator = ({ height = 2 }) => {
-  return <View style={[styles.container, { height: height }]}></View>;
+const ItemSeparator = ({ height = 2, bgColor = colors.light }) => {
+  return (
+    <View
+      style={[styles.container, { height: height, backgroundColor: bgColor }]}
+    ></View>
+  );
 };
 
 export default ItemSeparator;
