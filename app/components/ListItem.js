@@ -11,7 +11,7 @@ const ListItem = ({ image, title, subTitle, onPress, renderRightActions }) => {
       <TouchableHighlight underlayColor={colors.light} onPress={onPress}>
         <View style={styles.listContainer}>
           <Image style={styles.image} source={image} />
-          <View>
+          <View style={styles.textSection}>
             <AppText style={styles.title}>{title}</AppText>
             <AppText style={styles.subTitle}>{subTitle}</AppText>
           </View>
@@ -41,5 +41,9 @@ const styles = StyleSheet.create({
   subTitle: {
     fontWeight: "500",
     color: colors.medium,
+  },
+  textSection: {
+    justifyContent: "center",
+    alignItems: "flex-start",
   },
 });
