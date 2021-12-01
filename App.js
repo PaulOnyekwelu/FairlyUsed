@@ -1,10 +1,14 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import AppTextInput from "./app/components/AppTextInput";
+import Screen from "./app/components/Screen";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingScreen from "./app/screens/ListingScreen";
 
 export default function App() {
-  return <ListingScreen />
+  return <Screen style={{backgroundColor: "white"}}>
+    <AppTextInput placeholder="Email" iconName="email" />
+  </Screen>
 }
 
 const styles = StyleSheet.create({
