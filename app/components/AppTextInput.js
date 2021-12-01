@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
   },
   input: {
     color: colors.medium,
-    flex: 1
+    flex: 1,
+    fontSize: 18
   },
   icon: {
     paddingRight: 10,
