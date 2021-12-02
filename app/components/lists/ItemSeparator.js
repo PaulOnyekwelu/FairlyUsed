@@ -6,7 +6,7 @@ const ItemSeparator = ({ height = 2, bgColor = colors.light }) => {
   return (
     <View
       style={[styles.container, { height: height, backgroundColor: bgColor }]}
-    ></View>
+    />
   );
 };
 
